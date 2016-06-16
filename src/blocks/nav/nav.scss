@@ -1,0 +1,129 @@
+$g_nav: $g_header;
+
+.nav {
+	position: relative;
+	height: $g_nav;
+	padding-top: 58px;
+	font-size: 15px;
+	text-align: center;
+	transition: padding-top $s/2 ease-out;
+
+	.header_fixed & {
+		padding-top: 19px;
+	}
+
+	@include res(pad) {
+		position: fixed;
+		z-index: 1;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		width: auto;
+		height: auto;
+		margin: 0;
+		text-align: right;
+		opacity: 0;
+		visibility: hidden;
+		transition: opacity $s linear;
+
+		&:after {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			height: 0;
+			background: black;
+			transition: height $s / 2 linear;
+		}
+
+		.nav-open & {
+			opacity: 1;
+			visibility: visible;
+
+			&:after {
+				height: 100%;
+			}
+		}
+	}
+}
+
+.naw__wrapper {
+	@extend .wrapper;
+}
+
+.nav__menu {
+	@include res(pad) {
+		position: relative;
+		z-index: 5;
+		margin: 90px 0 0 0;
+	}
+}
+
+.nav__list {
+	display: block;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.nav__item {
+	display: inline-block;
+	margin: 0 35px;
+
+	@include res(pad) {
+		display: block;
+		margin: 0;
+	}
+}
+
+.nav__link {
+	display: block;
+	position: relative;
+	box-sizing: border-box;
+	color: $c_white;
+	text-decoration: none;
+	line-height: 28px;
+	font-weight: 100;
+	opacity: .5;
+
+	&:hover {
+		opacity: 1;
+	}
+
+	&_active {
+		opacity: 1;
+	}
+
+	@include res(pad) {
+		clear: right;
+		float: right;
+		display: block;
+		position: relative;
+		height: auto;
+		margin: 0 0 40px;
+		padding-right: 0;
+		line-height: 1;
+		font-size: 24px;
+		font-weight: 300;
+		color: $c_white;
+
+		&:after {
+			bottom: 10px;
+		}
+
+		.nav__item_active & {
+			height: auto;
+			margin-right: -10px;
+			padding-right: 10px;
+			border-bottom: 0;
+			border-right: 2px solid $c_transparent;
+			color: $c_transparent;
+		}
+
+		.nav-open & {
+			width: auto;
+		}
+	}
+}

@@ -1,0 +1,44 @@
+.ico {
+	content: "";
+	display: inline-block;
+	background-size: cover;
+	vertical-align: middle;
+}
+
+.ico_note {
+	background-image: url("../images/ico_note.png" + $ver);
+	width: 85px;
+	height: 113px;
+}
+
+.ico_target {
+	background-image: url("../images/ico_target.png" + $ver);
+	width: 164px;
+	height: 113px;
+}
+
+.ico_picture {
+	background-image: url("../images/ico_picture.png" + $ver);
+	width: 149px;
+	height: 113px;
+}
+
+//.ico_arrow_prev
+//	background-image: url('../images/arrow_prev.png' + $ver)
+//	width: 30px
+//	height: 14px
+//
+//.ico_arrow_prev_white
+//	background-image: url('../images/arrow_prev_white.png' + $ver)
+//	width: 30px
+//	height: 14px
+//
+//.ico_arrow_next
+//	background-image: url('../images/arrow_next.png' + $ver)
+//	width: 30px
+//	height: 14px
+//
+//.ico_arrow_next_white
+//	background-image: url('../images/arrow_next_white.png' + $ver)
+//	width: 30px
+//	height: 14px

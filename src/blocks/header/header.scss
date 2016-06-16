@@ -1,0 +1,28 @@
+.header {
+	height: 170px;
+	color: $c_white;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.header__stripe {
+	height: $g_stripe;
+	background-color: $c_blue;
+}
+
+.header__social {
+	padding: 0 $g*1.5;
+}
+
+.header__social-link {
+	line-height: $g_stripe;
+	font-size: $g_icon;
+	padding: 0 $g;
+}
+.header__personal {
+	float: right;
+}
+.header__personal-link {
+	line-height: $g_stripe;
+	font-size: $g_icon;
+	padding: 0 $g;
+}

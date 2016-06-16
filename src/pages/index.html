@@ -1,0 +1,15 @@
+{% extends '../blocks/layout/layout.html' %}
+
+{% block meta-title %}Lumumba · Homepage{% endblock %}
+{% block meta-description %}Homepage descriptions{% endblock %}
+{% block meta-keywords %}Homepage keywords{% endblock %}
+
+{% set ver = '?v=' + Date.now() %}
+{% set layout_class = '_home' %}
+{% set nav_home = ' nav__link_active' %}
+
+{% block content %}
+
+	{% include "../blocks/home/home.html" %}
+
+{% endblock %}
