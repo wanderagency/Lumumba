@@ -28,6 +28,9 @@
 	padding: 0 $g;
 	vertical-align: middle;
 }
+.header__personal-icon {
+	display: inline-block;
+}
 .header__personal-link_auth {
 	padding: 0 $g;
 	font-size: $fs_caption;

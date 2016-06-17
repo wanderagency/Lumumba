@@ -1,19 +1,45 @@
 <!-- nav start -->
 <nav class="nav" role="navigation">
-	<div class="naw__wrapper">
-		<div class="nav__menu">
-			<ul class="nav__list">
-				<li class="nav__item">
-					<a class="nav__link{{ nav_home }}" href="index.html">Home</a>
-				</li>
-				<li class="nav__item">
-					<a class="nav__link{{ nav_freelancers }}" href="index-3.html">Freelancers</a>
-				</li>
-				<li class="nav__item">
-					<a class="nav__link{{ nav_clients }}" href="index-2.html">Clients</a>
-				</li>
-			</ul>
-		</div>
+	<div class="nav__wrapper">
+        <a class="nav__logo" href="/index.html"></a>
+        <ul class="nav__list">
+            <li class="nav__item">
+                <a class="nav__link{{ nav_competitions }}" href="index.html">
+                    <div class="nav__link-icon">{% include "../../static/icons/competitions.svg" %}</div>
+                    <span class="nav__link-text">Competitions</span>
+                </a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link{{ nav_themes }}" href="index.html">
+                    <div class="nav__link-icon">{% include "../../static/icons/themes.svg" %}</div>
+                    <span class="nav__link-text">Themes</span>
+                </a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link{{ nav_leaderboard }}" href="index.html">
+                    <div class="nav__link-icon">{% include "../../static/icons/leaderboard.svg" %}</div>
+                    <span class="nav__link-text">Leaderboard</span>
+                </a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link{{ nav_open_blog }}" href="index.html">
+                    <div class="nav__link-icon">{% include "../../static/icons/open-blog.svg" %}</div>
+                    <span class="nav__link-text">Open blog</span>
+                </a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link{{ nav_my_profile }}" href="index.html">
+                    <div class="nav__link-icon">{% include "../../static/icons/my-profile.svg" %}</div>
+                    <span class="nav__link-text">My profile</span>
+                </a>
+            </li>
+            <li class="nav__item">
+                <a class="nav__link{{ nav_shop }}" href="index.html">
+                    <div class="nav__link-icon">{% include "../../static/icons/shop.svg" %}</div>
+                    <span class="nav__link-text">Shop</span>
+                </a>
+            </li>
+        </ul>
 	</div>
 </nav>
 <!-- nav finish -->
