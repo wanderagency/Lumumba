@@ -20,9 +20,20 @@
 }
 .header__personal {
 	float: right;
+	padding: 0 $g*1.5;
 }
 .header__personal-link {
 	line-height: $g_stripe;
 	font-size: $g_icon;
 	padding: 0 $g;
+	vertical-align: middle;
+}
+.header__personal-link_auth {
+	padding: 0 $g;
+	font-size: $fs_caption;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.header__personal-link_auth:last-child {
+	border-left: 2px solid $c_white;
 }

@@ -1,0 +1,6 @@
+.style-guide {
+    position: relative;
+}
+.style-guide__wrapper {
+    @extend .wrapper;
+}

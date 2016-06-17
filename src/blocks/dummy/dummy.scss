@@ -1,0 +1,6 @@
+.dummy {
+    position: relative;
+}
+.dummy__wrapper {
+    @extend .wrapper;
+}
