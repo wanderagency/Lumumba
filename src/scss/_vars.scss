@@ -14,6 +14,7 @@ $g_layout_min: 1260px;						// Min size page
 $g_header: 170px;
 $g_stripe: 45px;
 $g_nav: 135px;
+$g_footer: 320px;
 $g_icon: 20px;								// Icon size
 
 
@@ -28,12 +29,12 @@ $m_phone: 480px;							// Media for small phones
 // colors
 $c_blue: #A2DEF7;                           // Blue
 $c_yellow: #F5B21B;                         // Yellow
-$c_yellow_hover: $c_yellow + #111;                         // Yellow
 $c_orange: #E3762B;                         // Orange
 $c_red: #C03928;                            // Red
 $c_white: #fff;                             // White
 $c_grey: #CCCCCC;                           // Grey
 $c_grey_dark: #505050;                      // Dark grey
+$c_black: #000;                             // Black
 $c_text: #4C4C4C;                           // Text
 $c_text_light: #B2B2B2;                     // Text light
 $c_transparent: transparent;                // Transparent
@@ -53,6 +54,7 @@ $fs_heading: 18px;                          // heading
 $fs_subheading: 15px;                       // subheading
 $fs_body: 14px;                             // main size
 $fs_caption: 12px;                          // tiny size
+$fs_small: 10px;                            // tiny size
 
 
 // animation speed

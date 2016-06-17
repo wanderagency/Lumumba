@@ -20,7 +20,7 @@ var pngquant = require('imagemin-pngquant');
 var htmlSrc = ['./src/pages/*.html', './src/blocks/**/*.html'];
 var pagesSrc = './src/pages/*.html';
 var pagesDest = './build/';
-var scssSrc = ['./src/blocks/**/*.scss', './src/scss/_*.scss']
+var scssSrc = ['./src/blocks/**/*.scss', './src/scss/*.scss']
 var mainScssSrc = './src/scss/main.scss'
 var scssDest = './build/css'
 var imgSrc = './src/static/images/*';
@@ -31,6 +31,8 @@ var jsSrc = './src/js/*.js';
 var jsDest = './build/js';
 var uploadSrc = './src/static/uploads/*';
 var uploadDest = './build/static/uploads';
+var fontSrc = './src/static/fonts/*';
+var fontDest = './build/static/fonts';
 var timestamp = Math.round(+new Date());
 // Config end
 
@@ -129,6 +131,12 @@ gulp.task('uploads', function () {
 		.pipe(connect.reload());
 });
 
+// Fonts
+gulp.task('fonts', function () {
+    return gulp.src(fontSrc)
+        .pipe(gulp.dest(fontDest));
+});
+
 // Watch
 gulp.task('watch', function () {
 	gulp.watch(scssSrc, ['scss'])
@@ -140,4 +148,4 @@ gulp.task('watch', function () {
 })
 
 // Default
-gulp.task('default', ['swig', 'scss', 'js', 'images', 'icons', 'uploads', 'connect', 'watch'])
+gulp.task('default', ['swig', 'scss', 'js', 'images', 'icons', 'uploads', 'fonts', 'connect', 'watch'])

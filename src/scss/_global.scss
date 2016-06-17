@@ -1,16 +1,20 @@
 @font-face {
     font-family: 'MF I Love Glitter';
-    src: url('mf_i_love_glitter.woff2') format('woff2'),
-         url('mf_i_love_glitter.woff') format('woff');
+    src: url('../static/fonts/mf_i_love_glitter.woff2') format('woff2'),
+         url('../static/fonts/mf_i_love_glitter.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 @font-face {
     font-family: 'Chalkboard';
-    src: url('chalkboard.woff2') format('woff2'),
-         url('chalkboard.woff') format('woff');
+    src: url('../static/fonts/chalkboard.woff2') format('woff2'),
+         url('../static/fonts/chalkboard.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 html {
@@ -44,55 +48,48 @@ a {
 h1,
 .title_h1 {
 	position: relative;
-	margin: 0;
-	font-size: $fs_title;
-	font-weight: 400;
-	text-align: center;
-	line-height: 1.3;
+	margin: $g_v*5 0 $g_v*7;
+    font-family: $ff_title;
+    font-size: $fs_title;
+    line-height: 1.3;
+    font-weight: 400;
+    text-align: center;
+    color: $c_black;
 }
 
 h2,
 .title,
 .title_h2 {
-	margin: 0;
-	color: $c_blue;
-	line-height: 1.3;
-	font-size: $fs_large;
+    margin: $g_v*7 0 $g_v*6;
+    font-size: $fs_large;
+    line-height: 1.3;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1em;
+    color: $c_black;
 }
 
 h3,
 .title_h3 {
-	color: $c_blue;
-	font-size: $fs_large;
-	font-weight: 700;
+    font-size: $fs_heading;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: $c_blue;
 }
 
 h4 {
-	color: $c_blue;
-	font-size: $fs_body;
-	font-weight: 600;
-}
-
-h5 {
-	color: $c_blue;
-	font-size: $fs_subheading;
-	font-weight: 600;
-}
-
-.subtitle {
-	color: $c_yellow;
+    font-size: $fs_subheading;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: $c_black;
 }
 
 hr {
 	clear: both;
-	margin: 35px 0;
-	border: 0;
-	border-top: 1px solid $c_blue;
-	border-top: 1px solid rgba($c_blue, .2);
-
-	@include res(pad) {
-		margin: 30px 0;
-	}
+    border: 0;
+	border-top: 1px solid $c_grey;
 }
 
 .clearfix {

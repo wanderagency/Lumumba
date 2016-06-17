@@ -2,3 +2,7 @@
 ._*
 Thumbs.db
 ehthumbs.db
+
+build/
+node_modules/
+worklog.txt
