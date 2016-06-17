@@ -44,19 +44,11 @@
 	text-transform: uppercase;
 	color: $c_grey;
 	text-decoration: none;
-	
+
 	&:hover {
 		color: $c_blue;
 	}
 	&_selected {
 		color: $c_blue;
 	}
-}
-
-.nav__link-icon svg,
-.nav__link-icon g,
-.nav__link-icon path {
-	stroke: currentColor;
-	fill: currentcolor;
-	stroke-width: .2;
 }

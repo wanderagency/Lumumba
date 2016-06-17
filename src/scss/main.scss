@@ -2,17 +2,12 @@
 @import './_vars';
 @import './_mixins';
 @import './_global';
+@import './_form';
 
-// @import '../blocks/form/form';
-@import '../blocks/button/button';
-// @import '../blocks/ico/ico';
-
-@import '../blocks/layout/layout';
-@import '../blocks/header/header';
-@import '../blocks/nav/nav';
-// @import '../blocks/content/content';
-// @import '../blocks/section/section';
-@import '../blocks/footer/footer';
+@import '../blocks/_layout/_layout';
+@import '../blocks/_header/_header';
+@import '../blocks/_nav/_nav';
+@import '../blocks/_footer/_footer';
 
 @import '../blocks/style-guide/style-guide';
 @import '../blocks/dummy/dummy';
