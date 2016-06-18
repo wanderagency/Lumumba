@@ -1,6 +1,6 @@
 .latest {
     position: relative;
-    padding-top: $g_v*6;
+    padding-top: $g_space*1.5;
     background: url('../static/images/latest_bg.png') center -24px no-repeat;
     overflow: hidden;
 }
@@ -10,7 +10,7 @@
 }
 
 .latest__title {
-    margin-bottom: $g_v*4;
+    margin-bottom: $g_space;
     color: $c_white;
 }
 
@@ -29,7 +29,7 @@
 }
 
 .latest__caption {
-    margin: $g_v*4.5 0;
+    margin: $g_space 0;
     font-size: $fs_heading;
     text-transform: uppercase;
     letter-spacing: .15em;
@@ -37,7 +37,7 @@
 }
 
 .latest__link {
-    font-size: $fs_heading;
+    font-size: $fs_button;
     text-transform: uppercase;
     letter-spacing: .15em;
     color: $c_orange_dark;

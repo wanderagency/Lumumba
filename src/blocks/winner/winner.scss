@@ -1,0 +1,37 @@
+.winner {
+    position: relative;
+    margin-bottom: $g_space*2;
+    height: 320px;
+    background: url('../static/images/winner_bg.png') center top no-repeat;
+    overflow: hidden;
+}
+
+.winner__wrapper {
+    @extend .wrapper;
+
+    padding: $g_space;
+}
+
+.winner__title {
+    margin-bottom: -$g_v*2;
+    font-family: $ff_title;
+    font-size: $fs_huge;
+    color: $c_white;
+}
+
+.winner__link {
+    font-size: $fs_subheading;
+    text-transform: uppercase;
+    letter-spacing: 1.35em;
+    color: $c_white;
+}
+
+.winner__image {
+    position: absolute;
+    right: $g_space;
+    top: 0;
+}
+
+.winner__button-wrapper {
+    margin-top: $g_space;
+}
