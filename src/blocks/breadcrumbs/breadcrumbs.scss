@@ -1,0 +1,40 @@
+.breadcrumbs {
+    position: relative;
+}
+
+.breadcrumbs__wrapper {
+    @extend .wrapper;
+}
+
+.breadcrumbs__list {
+    display: block;
+    margin: $g_v*8 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.breadcrumbs__item {
+    display: inline-block;
+}
+
+.breadcrumbs__link {
+    margin-right: $g/2;
+    font-size: $fs_caption;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    &:hover {
+        color: $c_blue;
+    }
+}
+
+.breadcrumbs__link:after {
+    content: "|";
+    margin-left: $g/2;
+    color: $c_text;
+}
+
+.breadcrumbs__item:last-child .breadcrumbs__link:after {
+    display: none;
+}
+

@@ -15,6 +15,7 @@ var swig = require('gulp-swig');
 var newer = require('gulp-newer');
 var imagemin = require('gulp-imagemin');
 var pngquant = require('imagemin-pngquant');
+var htmlclean = require('gulp-htmlclean');
 
 // Config start
 var htmlSrc = ['./src/pages/*.html', './src/blocks/**/*.html'];
@@ -76,6 +77,7 @@ gulp.task('swig', function() {
 		.pipe(swig({
 			defaults: { cache: false }
 		}))
+        .pipe(htmlclean())
 		.pipe(gulp.dest(pagesDest))
 		.pipe(connect.reload())
 		//.pipe(reload({stream:true}));
