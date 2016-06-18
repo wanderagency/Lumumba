@@ -85,9 +85,11 @@ gulp.task('swig', function() {
 // JS
 gulp.task('js', function () {
 	gulp.src(jsSrc)
+        .pipe(sourcemaps.init())
+        //.pipe(reload({stream:true}))
+        .pipe(sourcemaps.write({includeContent: false, sourceRoot: '/src/js'}))
+        .pipe(gulp.dest(jsDest))
 		.pipe(connect.reload())
-		//.pipe(reload({stream:true}))
-		.pipe(gulp.dest(jsDest));
 });
 
 // Images

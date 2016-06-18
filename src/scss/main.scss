@@ -1,3 +1,6 @@
+@import './tether.min';
+@import './select-theme-default';
+
 @import './_normalize';
 @import './_vars';
 @import './_mixins';
@@ -13,3 +16,4 @@
 @import '../blocks/dummy/dummy';
 @import '../blocks/latest/latest';
 @import '../blocks/winner/winner';
+@import '../blocks/filter/filter';
