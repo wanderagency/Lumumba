@@ -1,3 +1,64 @@
+.button {
+    display: inline-block;
+    border: 1px solid currentColor;
+    min-width: $g*10;
+    padding: $g_v $g*1.5;
+    font-size: $fs_button;
+
+    &__icon {
+        display: inline-block;
+        margin-bottom: -$g/2;
+        padding: 0 $g 0 $g/2;
+
+        & > svg {
+            vertical-align: middle;
+        }
+    }
+
+    &__text {
+        display: inline-block;
+        font-weight: 400;
+        vertical-align: middle;
+        letter-spacing: .05em;
+    }
+
+    &:hover {
+        border: 1px solid $c_white;
+        background-color: transparent;
+        color: $c_white;
+    }
+
+    &_white-yellow {
+        background-color: $c_white;
+        color: $c_yellow;
+    }
+
+    &_white-blue {
+        background-color: $c_white;
+        color: $c_blue;
+    }
+
+    &_blue {
+        background-color: $c_blue;
+        color: $c_white;
+
+        &:hover {
+            border: 1px solid $c_blue;
+            color: $c_blue;
+        }
+    }
+
+    &_red {
+        background-color: $c_red;
+        color: $c_white;
+
+        &:hover {
+            border: 1px solid $c_red;
+            color: $c_red;
+        }
+    }
+}
+
 // .button {
 //     display: inline-block;
     // min-width: 100px;
