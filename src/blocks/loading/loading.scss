@@ -1,0 +1,27 @@
+.loading {
+    position: relative;
+    margin-top: $g_v*6;
+}
+
+.loading__wrapper {
+    @extend .wrapper;
+
+    text-align: center;
+}
+
+.loading__icon {
+    display: inline-block;
+    animation-name: loading-rotation;
+    animation-duration: $s*10;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes loading-rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
