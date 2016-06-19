@@ -62,6 +62,10 @@
     }
 }
 
+.select-element.select-open {
+    z-index: 2;
+}
+
 .select-target.select-type-form {
     margin-right: $g*2;
     border: 1px solid $c_grey;

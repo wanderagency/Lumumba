@@ -1,0 +1,48 @@
+.countdown {
+    position: relative;
+    margin-bottom: $g_space*2;
+    background-color: $c_yellow;
+    overflow: hidden;
+}
+
+.countdown__wrapper {
+    @extend .wrapper;
+
+    height: $g*12;
+    background: url('../static/images/countdown_bg.png') 75% 0 no-repeat;
+    text-align: center;
+    overflow: hidden;
+}
+
+.countdown__title {
+    margin-top: $g_space*.75;
+    margin-bottom: -$g_space*.1;
+    font-size: $fs_large;
+    font-weight: 500;
+    letter-spacing: .15em;
+    color: $c_white;
+}
+
+.countdown__timer {
+    margin-right: .33em;
+    display: inline-block;
+}
+
+.countdown__timer-value {
+    display: inline-block;
+}
+
+.countdown__timer-value:after {
+    content: ':';
+}
+
+.countdown__timer-value:last-child:after {
+    display: none;
+}
+
+.countdown__text {
+    font-size: $fs_large;
+    font-weight: 100;
+    letter-spacing: .25em;
+    color: $c_white;
+}

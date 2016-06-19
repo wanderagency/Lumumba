@@ -1,7 +1,6 @@
 .winner {
     position: relative;
     margin-bottom: $g_space*2;
-    height: 320px;
     background: url('../static/images/winner_bg.png') center top no-repeat;
     overflow: hidden;
 }
@@ -9,6 +8,7 @@
 .winner__wrapper {
     @extend .wrapper;
 
+    height: 320px;
     padding: $g_space;
 }
 

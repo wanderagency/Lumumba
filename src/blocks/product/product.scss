@@ -58,13 +58,13 @@
 }
 
 .product__param-title {
-    margin: $g_space/2 0 $g_space/4;
+    margin: 0 0 $g_space/4;
     font-size: $fs_heading;
     font-weight: 600;
 }
 
 .product__param-value {
-    margin: 0;
+    margin: 0 0 $g_space/2;
 }
 
 .product__input[type=radio] {
@@ -83,7 +83,7 @@
 .product__label {
     position: relative;
     display: inline-block;
-    margin-right: $g_space;
+    margin-right: $g_space*.75;
     width: $g*4;
     height: $g*4;
     line-height: $g*4;
