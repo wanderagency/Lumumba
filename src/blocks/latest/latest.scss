@@ -23,16 +23,20 @@
     margin: 0;
 }
 
+.latest__video {
+    width: 100%;
+}
+
 .latest__image {
     display: block;
 }
 
 .latest__caption {
     margin: $g_space 0;
-    font-size: $fs_heading;
-    text-transform: uppercase;
-    letter-spacing: .15em;
-    color: $c_orange_dark;
+}
+
+.latest__video + .latest__caption {
+    text-align: center;
 }
 
 .latest__link {
