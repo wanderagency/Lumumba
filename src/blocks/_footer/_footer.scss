@@ -8,8 +8,8 @@
 .footer__wrapper {
 	@extend .wrapper;
 
-	height: $g_footer;
-	padding: $g_v*6 0 $g_v*4;
+	height: 320px;
+	padding: $g*6 0 $g*4;
 }
 
 .footer__nav {
@@ -39,7 +39,7 @@
 }
 
 .footer__social-link {
-    line-height: $g_stripe;
+    line-height: 45px;
     font-size: $g_icon;
     padding: 0 $g;
 }

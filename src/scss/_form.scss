@@ -2,7 +2,7 @@
     display: inline-block;
     border: 1px solid currentColor;
     min-width: $g*25;
-    padding: ($g_v)-1 $g*1.5 $g_v;
+    padding: ($g)-1 $g*1.5 $g;
     font-size: $fs_button;
     text-align: center;
     vertical-align: middle;
@@ -67,7 +67,7 @@
     border: 1px solid $c_grey;
     border-radius: 0;
     min-width: $g*15;
-    height: $g_v*4.3;
+    height: $g*4.3;
     font-size: $fs_button;
     background-color: $c_white;
     vertical-align: middle;
