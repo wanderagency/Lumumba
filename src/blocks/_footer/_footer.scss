@@ -1,6 +1,6 @@
 .footer {
 	position: relative;
-    margin-top: $g_v*10;
+    margin-top: $g_space*2.5;
 	background: $c_red;
 	color: $c_white;
 }
@@ -9,7 +9,7 @@
 	@extend .wrapper;
 
 	height: $g_footer;
-	padding: $g*6 0 $g*4;
+	padding: $g_v*6 0 $g_v*4;
 }
 
 .footer__nav {
@@ -22,7 +22,7 @@
 
 .footer__nav-item {
 	display: inline-block;
-	margin: 0 $g*3;
+	margin: 0 $g_space*.75;
 }
 .footer__nav-link {
 	display: inline-block;
@@ -34,7 +34,7 @@
 }
 
 .footer__social {
-    margin-top: $g*5;
+    margin-top: $g_space*1.25;
     text-align: center;
 }
 
@@ -45,7 +45,7 @@
 }
 
 .footer__copy {
-	margin-top: $g*6;
+	margin-top: $g_space*1.5;
 	font-size: $fs_small;
 	text-align: center;
 	text-transform: uppercase;

@@ -1,5 +1,6 @@
 .product {
     position: relative;
+    margin-bottom: $g_space*2.5;
 }
 
 .product__wrapper {
@@ -10,19 +11,19 @@
 
 .product__gallery {
     display: flex;
-    margin-right: $g*8;
+    margin-right: $g_space*2;
 }
 
 .product__preview-list {
     display: flex;
     flex-direction: column;
-    margin: 0 $g*2 0 0;
+    margin: 0 $g_space/2 0 0;
     padding: 0;
     list-style-type: none;
 }
 
 .product__preview-item {
-    margin-bottom: $g*2;
+    margin-bottom: $g_space/2;
 }
 
 .product__preview-photo {
@@ -42,13 +43,13 @@
 }
 
 .product__title {
-    margin-bottom: $g_v/2;
+    margin-bottom: $g_space/8;
     font-size: $fs_larger;
     font-weight: 600;
 }
 
 .product__price {
-    margin-bottom: $g_v*4;
+    margin-bottom: $g_space;
     font-size: $fs_large;
 }
 
@@ -57,7 +58,7 @@
 }
 
 .product__param-title {
-    margin: $g_v*2 0 $g;
+    margin: $g_space/2 0 $g_space/4;
     font-size: $fs_heading;
     font-weight: 600;
 }
@@ -69,7 +70,7 @@
 .product__input[type=radio] {
     position: relative;
     display: inline-block;
-    margin-right: -$g*4;
+    margin-right: -$g_space;
     border: 0;
     width: $g*4;
     height: $g*4;
@@ -82,7 +83,7 @@
 .product__label {
     position: relative;
     display: inline-block;
-    margin-right: $g*4;
+    margin-right: $g_space;
     width: $g*4;
     height: $g*4;
     line-height: $g*4;
@@ -96,7 +97,7 @@
 }
 
 .product__label_color {
-    margin-right: $g;
+    margin-right: $g_space/4;
     border: 1px solid transparent;
     border-radius: 50%;
 }
@@ -125,8 +126,8 @@
 }
 
 .product__desc-title {
-    margin-top: $g_v*5;
-    margin-bottom: $g_v*3;
+    margin-top: $g_space*1.25;
+    margin-bottom: $g_space*.75;
     font-size: $fs_large;
     text-transform: uppercase;
 }
@@ -136,10 +137,10 @@
 }
 
 .product__social {
-    margin-top: $g_v*5;
+    margin-top: $g_space*1.25;
 }
 
 .product__social-link {
-    margin-right: $g_v*2.5;
+    margin-right: $g_space*.75;
     font-size: $fs_heading;
 }
