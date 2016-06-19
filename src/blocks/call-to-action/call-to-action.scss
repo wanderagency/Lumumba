@@ -1,0 +1,36 @@
+.call-to-action {
+    position: relative;
+    margin-top: $g_space;
+    background: $c_blue url('../static/images/call-to-action_bg.png') center center no-repeat;
+    overflow: hidden;
+}
+
+.call-to-action__wrapper {
+    @extend .wrapper;
+
+    height: $g*33;
+    text-align: center;
+}
+
+.call-to-action__title {
+    margin-top: $g_space*1.75;
+    font-size: $fs_title;
+    letter-spacing: 0.1em;
+    color: $c_white;
+}
+
+.call-to-action__title:after {
+    content: '';
+    display: inline-block;
+    position: relative;
+    top: -$g*2;
+    border-top: $g/2.5 solid $c_white;
+    width: $g*10;
+}
+
+.call-to-action__text {
+    margin-top: $g_space*.25;
+    margin-bottom: $g_space/2;
+    font-size: $fs_large;
+    color: $c_white;
+}

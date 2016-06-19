@@ -9,10 +9,12 @@
     @extend .wrapper;
 
     height: 320px;
-    padding: $g_space;
+    padding: 0 $g_space;
+    overflow: hidden;
 }
 
 .winner__title {
+    margin-top: $g_space;
     margin-bottom: -$g*2;
     font-family: $ff_title;
     font-size: $fs_huge;

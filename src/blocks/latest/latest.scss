@@ -1,6 +1,5 @@
 .latest {
     position: relative;
-    padding-top: $g_space*1.5;
     background: url('../static/images/latest_bg.png') center -24px no-repeat;
     overflow: hidden;
 }
@@ -10,7 +9,7 @@
 }
 
 .latest__title {
-    margin: 0 0 $g_space;
+    margin: $g_space*1.5 0 $g_space;
     color: $c_white;
 }
 
