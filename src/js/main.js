@@ -1,5 +1,5 @@
 // DOM ready polyfill
-function DOMready(fn) {
+function onDOMready(fn) {
     if (document.readyState != 'loading'){
         fn();
     } else {
@@ -8,12 +8,22 @@ function DOMready(fn) {
 }
 
 // On DOM ready
-DOMready(function(){
-    var FILTER_SELECT_CLASSNAME = 'filter__droprown-select'
-    var FILTER_SELECT_MARKER = 'select-type-filter'
+onDOMready(function(){
+
+    // Init custom select inputs
+    var FILTER_SELECT_CLASSNAME = 'filter__droprown-select';
+    var FILTER_SELECT_MARKER = 'select-type-filter';
+    var FORM_SELECT_CLASSNAME = 'form__select';
+    var FORM_SELECT_MARKER = 'select-type-form';
 
     Select.init({
         selector: '.' + FILTER_SELECT_CLASSNAME,
         className: 'select-theme-default ' + FILTER_SELECT_MARKER
     });
+
+    Select.init({
+        selector: '.' + FORM_SELECT_CLASSNAME,
+        className: 'select-theme-default ' + FORM_SELECT_MARKER
+    });
+
 });

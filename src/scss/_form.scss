@@ -1,9 +1,12 @@
 .button {
     display: inline-block;
     border: 1px solid currentColor;
-    min-width: $g*10;
-    padding: $g_v $g*1.5;
+    min-width: $g*25;
+    padding: ($g_v)-1 $g*1.5 $g_v;
     font-size: $fs_button;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
 
     &__icon {
         display: inline-block;
@@ -57,6 +60,38 @@
             color: $c_red;
         }
     }
+}
+
+.select-target.select-type-form {
+    margin-right: $g*2;
+    border: 1px solid $c_grey;
+    border-radius: 0;
+    min-width: $g*15;
+    height: $g_v*4.3;
+    font-size: $fs_button;
+    background-color: $c_white;
+    vertical-align: middle;
+}
+
+.select-target.select-type-form.select-target-focused,
+.select-target.select-type-form.select-target-focused:focus {
+    border-color: $c_blue;
+}
+
+.select.select-type-form .select-content {
+    border: 1px solid $c_grey;
+    border-radius: 0;
+    box-shadow: $bs;
+}
+
+.select.select-type-form .select-options .select-option:first-child,
+.select.select-type-form .select-options .select-option:last-child {
+    border-radius: 0;
+}
+
+.select.select-type-form .select-options .select-option:hover,
+.select.select-type-form .select-options .select-option.select-option-highlight {
+    background-color: $c_blue;
 }
 
 // .button {

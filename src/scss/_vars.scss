@@ -39,6 +39,8 @@ $c_black: #000;                             // Black
 $c_text: #4C4C4C;                           // Text
 $c_text_light: #B2B2B2;                     // Text light
 $c_transparent: transparent;                // Transparent
+$c_radio_red: #A84D4D;                      // Radio button red
+$c_radio_blue: #4D7CA8;                     // Radio button blue
 
 
 // font-family
@@ -62,7 +64,7 @@ $fs_small: 10px;                            // tiny size
 
 
 // box shadow
-$bs: 1px 1px 4px rgba(0, 0, 0, .15);
+$bs: 1px 1px 4px rgba(0, 0, 0, .1);
 
 
 // animation speed
