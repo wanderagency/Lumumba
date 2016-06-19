@@ -58,7 +58,6 @@ h1,
 }
 
 h2,
-.title,
 .title_h2 {
     margin: $g*6 0;
     font-size: $fs_large;
@@ -79,7 +78,8 @@ h3,
     color: $c_blue;
 }
 
-h4 {
+h4,
+.title_h4 {
     font-size: $fs_subheading;
     text-transform: uppercase;
     font-weight: 400;

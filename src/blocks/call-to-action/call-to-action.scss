@@ -1,6 +1,7 @@
 .call-to-action {
     position: relative;
     margin-top: $g_space;
+    margin-bottom: $g_space*1.5;
     background: $c_blue url('../static/images/call-to-action_bg.png') center center no-repeat;
     overflow: hidden;
 }
