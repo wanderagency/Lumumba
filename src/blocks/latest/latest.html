@@ -1,0 +1,28 @@
+<!-- Latest start -->
+<div class="latest">
+    <div class="latest__wrapper">
+        <h2 class="latest__title">{{ latestData.title }}</h2>
+        <div class="latest__tile-list">
+            {% for item in latestData.items %}
+                <figure class="latest__tile">
+                    {% if item.hasOwnProperty('videoSrc') %}
+                    <video class="latest__video" src="{{ item.videoSrc }}" poster="{{ item.src }}"></video>
+                    {% else %}
+                    <img class="latest__image" src="{{ item.src }}{{ ver }}">
+                    {% endif %}
+                    <figcaption class="latest__caption">
+                        <a class="latest__link" href="javascript:;">
+                            {{ item.title }}
+                        </a>
+                        {% if item.hasOwnProperty('desc') %}
+                        <p class="latest__description">
+                            {{ item.desc }}
+                        </p>
+                        {% endif %}
+                    </figcaption>
+                </figure>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<!-- Latest finish -->

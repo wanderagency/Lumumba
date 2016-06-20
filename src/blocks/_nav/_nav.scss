@@ -1,0 +1,54 @@
+.nav {
+	position: relative;
+	height: 135px;
+	text-align: center;
+}
+
+.nav__wrapper {
+	padding-top: $g*3;
+	@extend .wrapper;
+}
+
+.nav__logo {
+	position: absolute;
+	left: 50%;
+	top: $g*3;
+	transform: translate(-50%, 0);
+    background: url("../static/images/logo.png" + $ver) center center no-repeat;
+    background-size: cover;
+    width: 244px;
+    height: 67px;
+}
+
+.nav__list {
+	display: block;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.nav__item {
+	display: inline-block;
+	width: $g*9;
+	margin: 0 $g;
+}
+
+.nav__item:nth-child(3) {
+	margin-right: $g*38;
+}
+
+.nav__link {
+	position: relative;
+	font-family: $ff_alt2;
+	font-size: $fs_caption;
+	text-transform: uppercase;
+	color: $c_grey;
+	text-decoration: none;
+
+	&:hover {
+		color: $c_blue;
+	}
+	&_selected {
+		color: $c_blue;
+	}
+}

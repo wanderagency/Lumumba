@@ -1,0 +1,54 @@
+.footer {
+	position: relative;
+    margin-top: $g_space*2.5;
+	background: $c_red;
+	color: $c_white;
+}
+
+.footer__wrapper {
+	@extend .wrapper;
+
+	height: 320px;
+	padding: $g*6 0 $g*4;
+}
+
+.footer__nav {
+	display: block;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+	text-align: center;
+}
+
+.footer__nav-item {
+	display: inline-block;
+	margin: 0 $g_space*.75;
+}
+.footer__nav-link {
+	display: inline-block;
+	padding: $g;
+	font-size: $fs_caption;
+	font-weight: 600;
+	text-transform: uppercase;
+	letter-spacing: .3em;
+}
+
+.footer__social {
+    margin-top: $g_space*1.25;
+    text-align: center;
+}
+
+.footer__social-link {
+    line-height: 45px;
+    font-size: $g_icon;
+    padding: 0 $g;
+}
+
+.footer__copy {
+	margin-top: $g_space*1.5;
+	font-size: $fs_small;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: .3em;
+	opacity: .5;
+}

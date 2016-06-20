@@ -1,0 +1,9 @@
+*.DS_Store
+._*
+Thumbs.db
+ehthumbs.db
+
+npm-debug.log
+build/
+node_modules/
+worklog.txt

@@ -1,0 +1,16 @@
+.theme-desc {
+    position: relative;
+}
+.theme-desc__wrapper {
+    @extend .wrapper;
+
+    text-align: center;
+}
+
+.theme-desc__text {
+
+}
+
+.theme-desc__image {
+    margin-top: $g_space*2;
+}

@@ -1,0 +1,83 @@
+.filter {
+    position: relative;
+    margin-bottom: $g_space*2;
+}
+
+.filter__wrapper {
+    @extend .wrapper;
+
+    display: flex;
+    align-items: baseline;
+}
+
+.filter__droprown {
+    margin-right: $g_space;
+}
+
+.filter__droprown-title {
+    display: inline-block;
+    font-size: $fs_caption;
+    font-weight: 600;
+    vertical-align: middle;
+}
+
+.filter__droprown-select + .select-target {
+    border: 0;
+    background: none;
+    padding: 0 $g*3 0 $g*.5;
+    font-size: $fs_caption;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    color: $c_blue;
+}
+
+.filter__droprown-select + .select-target b {
+    background: url('../static/icons/filter-arrow.svg') center center no-repeat;
+    transition: transform $s;
+}
+.filter__droprown-select + .select-target.select-open b {
+    transform: rotate(180deg);
+}
+.filter__droprown-select + .select-target b:after,
+.filter__droprown-select + .select-target b:before {
+    display: none;
+}
+
+.select.select-type-filter .select-content {
+    border: 1px solid $c_grey;
+    border-radius: 0;
+    box-shadow: $bs;
+}
+
+.select.select-type-filter .select-options .select-option:first-child,
+.select.select-type-filter .select-options .select-option:last-child {
+    border-radius: 0;
+}
+
+.select.select-type-filter .select-options .select-option:hover,
+.select.select-type-filter .select-options .select-option.select-option-highlight {
+    background-color: $c_blue;
+}
+
+.select.select-type-filter .select-options .select-option.select-option-selected:before {
+    content: '';
+    background: url('../static/icons/filter-selected.svg') center center no-repeat;
+}
+
+.select.select-type-filter .select-options .select-option:hover.select-option-selected:before,
+.select.select-type-filter .select-options .select-option.select-option-highlight.select-option-selected:before {
+    content: '';
+    background: url('../static/icons/filter-selected-hover.svg') center center no-repeat;
+}
+
+.filter__summary {
+    flex: 1 1 auto;
+    font-size: $fs_caption;
+    font-weight: 600;
+    text-align: right;
+}
+
+.filter__summary-highlight {
+    color: $c_blue;
+}

@@ -1,0 +1,42 @@
+.header {
+	height: 170px;
+	color: $c_white;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.header__stripe {
+	height: 45px;
+	background-color: $c_blue;
+}
+
+.header__social {
+	padding: 0 $g*1.5;
+}
+
+.header__social-link {
+	line-height: 45px;
+	font-size: $g_icon;
+	padding: 0 $g;
+}
+.header__personal {
+	float: right;
+	padding: 0 $g*1.5;
+}
+.header__personal-link {
+	line-height: 45px;
+	font-size: $g_icon;
+	padding: 0 $g;
+	vertical-align: middle;
+}
+.header__personal-icon {
+	display: inline-block;
+}
+.header__personal-link_auth {
+	padding: 0 $g;
+	font-size: $fs_caption;
+	font-weight: 600;
+	text-transform: uppercase;
+}
+.header__personal-link_auth:last-child {
+	border-left: 2px solid $c_white;
+}

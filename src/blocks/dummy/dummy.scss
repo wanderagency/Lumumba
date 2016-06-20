@@ -1,0 +1,8 @@
+.dummy {
+    position: relative;
+    padding: $g*5;
+    text-align: center;
+}
+.dummy__wrapper {
+    @extend .wrapper;
+}

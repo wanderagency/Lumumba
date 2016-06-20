@@ -1,0 +1,32 @@
+{% extends '../blocks/_layout/_layout.html' %}
+
+{% block meta-title %}Lumumba · Competitions{% endblock %}
+{% block meta-description %}Competitions descriptions{% endblock %}
+{% block meta-keywords %}Competitions keywords{% endblock %}
+
+{% set ver = '?v=' + Date.now() %}
+{% set layout_class = '_competitions' %}
+{% set nav_competitions = ' nav__link_selected' %}
+
+{% set latestData = {
+    title: 'Latest competition designs',
+    items: [{
+        src: '../static/uploads/latest_1.jpg',
+        title: 'Shana M. - Olive blouse shirt'
+    }, {
+        src: '../static/uploads/latest_2.jpg',
+        title: 'Carolyn J. - Cashmere sweater'
+    }]
+} %}
+
+{% block content %}
+
+    {% include "../blocks/countdown/countdown.html" %}
+    {% include "../blocks/latest/latest.html" %}
+	{% include "../blocks/call-to-action/call-to-action.html" %}
+    <h1 class="title_h1">Competition</h1>
+    {% include "../blocks/filter/filter.html" %}
+    {% include "../blocks/contestants/contestants.html" %}
+    {% include "../blocks/loading/loading.html" %}
+
+{% endblock %}

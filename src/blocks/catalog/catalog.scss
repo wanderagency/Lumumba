@@ -1,0 +1,54 @@
+.catalog {
+    position: relative;
+}
+
+.catalog__wrapper {
+    @extend .wrapper;
+}
+
+.catalog__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 0 (-$g*8) 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.catalog__item {
+    position: relative;
+    flex: 0 0 auto;
+    width: calc(25% - 30px);
+    margin-bottom: $g*8;
+}
+
+.catalog__to-cart {
+    position: absolute;
+    right: $g*1.5;
+    top: $g*1.5;
+}
+
+.catalog__link {
+    display: block;
+}
+
+.catalog__photo {
+    display: block;
+    width: 100%;
+}
+
+.catalog__name {
+    display: block;
+    margin-top: $g*3;
+    font-family: $ff_alt;
+    font-size: $fs_heading;
+    letter-spacing: .03em;
+    color: $c_blue;
+}
+
+.catalog__price {
+    display: block;
+    font-family: $ff_alt;
+    font-size: $fs_subheading;
+    letter-spacing: .03em;
+}

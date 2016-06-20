@@ -1,0 +1,51 @@
+.latest {
+    position: relative;
+    background: url('../static/images/latest_bg.png') center -24px no-repeat;
+    overflow: hidden;
+}
+
+.latest__wrapper {
+    @extend .wrapper;
+}
+
+.latest__title {
+    margin: $g_space*1.5 0 $g_space;
+    color: $c_white;
+}
+
+.latest__tile-list {
+    display: flex;
+    justify-content: space-between;
+}
+
+.latest__tile {
+    flex: 0 1 auto;
+    margin: 0;
+}
+
+.latest__video {
+    width: 100%;
+}
+
+.latest__image {
+    display: block;
+}
+
+.latest__caption {
+    margin: $g_space 0;
+}
+
+.latest__video + .latest__caption {
+    text-align: center;
+}
+
+.latest__link {
+    font-size: $fs_button;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+    color: $c_orange_dark;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}

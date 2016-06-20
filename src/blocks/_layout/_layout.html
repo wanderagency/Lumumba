@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!--[if IE 9]><html class="lt-ie10" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>{% block meta-title %}Title{% endblock %}</title>
+	<meta name="description" content="{% block meta-description %}Description{% endblock %}">
+	<meta name="keywords" content="{% block meta-keywords %}Keywords{% endblock %}">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="shortcut icon" href="/static/icons/favicon.ico{{ ver }}" type="image/x-icon">
+	<link rel="stylesheet" href="/css/main.css{{ ver }}" media="all">
+
+    <script src="/js/tether.min.js{{ ver }}"></script>
+    <script src="/js/select.min.js{{ ver }}"></script>
+	<script src="/js/main.js{{ ver }}"></script>
+</head>
+
+<body class="page{{ layout_class }}">
+
+<!-- layout start -->
+<div class="layout">
+
+	{% block header %}
+		{% include "../_header/_header.html" %}
+	{% endblock %}
+
+	<div class="layout__content">
+		{% block content %}{% endblock %}
+	</div>
+
+	{% block footer %}
+		{% include "../_footer/_footer.html" %}
+	{% endblock %}
+
+
+	<a class="top" href="#home"></a>
+
+</div>
+<!-- layout finish -->
+
+{% block popup %}{% endblock %}
+</body>
+</html>
