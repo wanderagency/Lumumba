@@ -1,0 +1,16 @@
+<!-- Left menu start -->
+<ul class="left-menu">
+    {% for item in leftmenuData %}
+    <li class="left-menu__item">
+        <a class="left-menu__link{% if item.hasOwnProperty('selected') %} left-menu__link_selected{% endif %}" href="{{ item.url }}">
+            <div class="left-menu__link-text">
+                {{ item.title }}
+            </div>
+            <div class="left-menu__link-arrow">
+                {% include "../../static/icons/nav-arrow.svg" %}
+            </div>
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+<!-- Left menu finish -->

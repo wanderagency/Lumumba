@@ -92,7 +92,7 @@ hr {
 	margin: $g_space auto;
     border: 0;
 	border-top: 1px solid $c_grey;
-	width: $g_layout_max;
+	width: $g_layout;
 }
 
 .clearfix {
@@ -109,10 +109,27 @@ hr {
 
 .wrapper {
 	position: relative;
-	max-width: $g_layout_max;
-	min-width: $g_layout_min;
+	width: $g_layout;
 	margin: 0 auto;
 	padding: 0;
+}
+
+.columns {
+	display: flex;
+}
+
+.columns__left-menu {
+	flex: 0 0 auto;
+}
+
+.columns__content {
+	flex: 1 0 auto;
+}
+
+.page-description {
+    margin: 0 auto $g_space*2.5;
+    width: $g_layout/1.5;
+    text-align: center;
 }
 
 .hidden {
