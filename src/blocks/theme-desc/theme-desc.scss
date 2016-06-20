@@ -1,5 +1,6 @@
 .theme-desc {
     position: relative;
+    overflow: hidden;
 }
 .theme-desc__wrapper {
     @extend .wrapper;
@@ -12,5 +13,5 @@
 }
 
 .theme-desc__image {
-    margin-top: $g_space*2;
+    margin-top: $g_space;
 }

@@ -1,0 +1,53 @@
+.checkers {
+    margin: $g_space*2 0;
+    position: relative;
+}
+
+.checkers__wrapper {
+    @extend .wrapper;
+}
+
+.checkers__tiles {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    flex-wrap: wrap;
+}
+
+.checkers__tile {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: $g_space;
+    width: 50%;
+}
+
+.checkers__tile:nth-child(3n),
+.checkers__tile:nth-child(4n) {
+    flex-direction: row-reverse;
+}
+
+.checkers__image {
+
+}
+
+.checkers__desc {
+    padding: 0 $g*4;
+}
+
+.checkers__tile:nth-child(4n+2) .checkers__desc {
+    padding-right: $g*2;
+}
+.checkers__tile:nth-child(4n+3) .checkers__desc {
+    padding-left: $g*2;
+}
+
+.checkers__title {
+    width: 100%;
+    font-family: $ff_title;
+    font-size: $fs_title;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: $c_blue;
+}
