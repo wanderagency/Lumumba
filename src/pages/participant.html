@@ -1,0 +1,18 @@
+{% extends '../blocks/_layout/_layout.html' %}
+
+{% block meta-title %}Lumumba · Participant{% endblock %}
+{% block meta-description %}Participant descriptions{% endblock %}
+{% block meta-keywords %}Participant keywords{% endblock %}
+
+{% set ver = '?v=' + Date.now() %}
+{% set layout_class = '_participant' %}
+{% set nav_participant = ' nav__link_selected' %}
+
+{% block content %}
+
+    {% include "../blocks/countdown/countdown.html" %}
+    {% include "../blocks/breadcrumbs/breadcrumbs.html" %}
+    {% include "../blocks/participant/participant.html" %}
+    {% include "../blocks/recommendations/recommendations.html" %}
+
+{% endblock %}
