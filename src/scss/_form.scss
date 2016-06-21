@@ -1,7 +1,8 @@
 .button {
     display: inline-block;
     border: 1px solid currentColor;
-    min-width: $g*25;
+    min-width: $g*17.5;
+    height: $g*4.5;
     padding: ($g)-1 $g*1.5 $g;
     font-size: $fs_button;
     text-align: center;

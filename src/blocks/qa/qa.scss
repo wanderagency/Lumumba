@@ -1,0 +1,46 @@
+.qa {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.qa__item {
+    margin-top: $g_space;
+    border-bottom: 1px solid $c_grey;
+    padding-bottom: $g_space;
+}
+
+.qa__item:last-child {
+    border-bottom: 0;
+}
+
+.qa__question {
+    font-size: $fs_heading;
+    font-weight: 500;
+    letter-spacing: .2em;
+}
+
+.qa__answer {
+    margin-top: $g_space/4;
+}
+
+.qa__responses {
+    margin-top: $g_space/2;
+    color: $c_grey;
+}
+
+.qa__actions {
+    display: flex;
+    margin-top: $g_space;
+}
+
+.qa__respond-button {
+    flex: 0 0 auto;
+    margin-right: $g;
+}
+
+.qa__action {
+    flex: 0 0 auto;
+    padding: $g*1.25;
+}

@@ -1,0 +1,25 @@
+<!-- Q&A start -->
+<ul class="qa">
+    {% for item in qaData %}
+    <li class="qa__item">
+        <div class="qa__question">{{ item.title }}</div>
+        <div class="qa__answer">{{ item.text }}</div>
+        <div class="qa__responses">{{ item.responses }} responses</div>
+
+        <div class="qa__actions">
+            <div class="button button_blue qa__respond-button">
+                <div class="button_text">
+                    Respond
+                </div>
+            </div>
+            <div class="qa__action">
+                {% include "../../static/icons/like.svg" %}
+            </div>
+            <div class="qa__action">
+                {% include "../../static/icons/dislike.svg" %}
+            </div>
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+<!-- Q&A finish -->
