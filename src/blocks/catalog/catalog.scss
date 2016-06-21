@@ -17,9 +17,13 @@
 
 .catalog__item {
     position: relative;
-    flex: 0 0 auto;
-    width: calc(25% - 30px);
+    flex: 0 0 calc(25% - 30px);
+    margin-right: $g*4;
     margin-bottom: $g*8;
+}
+
+.catalog__item:nth-child(4n) {
+    margin-right: 0;
 }
 
 .catalog__to-cart {
