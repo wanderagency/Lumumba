@@ -1,5 +1,10 @@
 <!-- Returns start -->
-<div class="returns">
-    returns content
-</div>
+<ol class="returns">
+    {% for item in returnsData %}
+    <li class="returns__item">
+        <div class="returns__question">{{ item.title }}</div>
+        <div class="returns__answer">{{ item.text }}</div>
+    </li>
+    {% endfor %}
+</ol>
 <!-- Returns finish -->
