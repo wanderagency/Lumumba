@@ -1,7 +1,7 @@
 .winner {
     position: relative;
     margin-bottom: $g_space*2;
-    background: url('../static/images/winner_bg.png') center top no-repeat;
+    background: $c_yellow url('../static/images/winner_bg.png') center bottom no-repeat;
     overflow: hidden;
 }
 
