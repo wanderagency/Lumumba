@@ -11,7 +11,7 @@
                     <img class="latest__image" src="{{ item.src }}{{ ver }}">
                     {% endif %}
                     <figcaption class="latest__caption">
-                        <a class="latest__link" href="javascript:;">
+                        <a class="latest__link" href="{{ item.url }}">
                             {{ item.title }}
                         </a>
                         {% if item.hasOwnProperty('desc') %}
