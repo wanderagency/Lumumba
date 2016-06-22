@@ -7,9 +7,57 @@
 {% set ver = '?v=' + Date.now() %}
 {% set layout_class = '_my-content' %}
 {% set nav_my_content = ' nav__link_selected' %}
+{% set leftmenuData = [{
+    title: 'My feed',
+    url: 'javascript:;'
+},{
+    title: 'My orders',
+    url: 'my-orders.html'
+},{
+    title: 'My designs',
+    url: 'my-designs.html'
+},{
+    title: 'My content',
+    url: 'my-content.html',
+    selected: true
+},{
+    title: 'Account settings',
+    url: 'javascript:;'
+},{
+    title: 'Shipping address',
+    url: 'javascript:;'
+},{
+    title: 'Billing information',
+    url: 'javascript:;'
+}] %}
+{% set myContentData = [{
+    image: '../static/uploads/blog_1.jpg',
+    title: 'Lorem ipsum dolor anat',
+    author: 'Chris Brown',
+    preview: 'Ut mi eros, elementum id nulla vitae, fermentum faucibus magna. Nunc egestas ultrices nibh et luctus. Vivamus mattis, arcu viverra tincidunt interdum, mauris diam condimentum arcu, vel pellentesque magna magna quis augue. Aenean congue eget quam eu auctor. Donec finibus sodales feugiat. Integer vel facilisis tortor.  Vivamus mattis, arcu viverra tincidunt interdum, mauris.',
+    date: 'May 5th, 2016'
+},{
+    image: '../static/uploads/blog_2.jpg',
+    title: 'Lorem ipsum dolor anat',
+    author: 'Chris Brown',
+    preview: 'Ut mi eros, elementum id nulla vitae, fermentum faucibus magna. Nunc egestas ultrices nibh et luctus. Vivamus mattis, arcu viverra tincidunt interdum, mauris diam condimentum arcu, vel pellentesque magna magna quis augue. Aenean congue eget quam eu auctor. Donec finibus sodales feugiat. Integer vel facilisis tortor.  Vivamus mattis, arcu viverra tincidunt interdum, mauris.',
+    date: 'May 5th, 2016'
+}]%}
 
 {% block content %}
 
-	{% include "../blocks/dummy/dummy.html" %}
+    <div class="wrapper">
+        <h1 class="title_h1">My dashboard</h1>
+        <p class="page-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent diam quam, porttitor semper auctor nec, bibendum at felis. Vestibulum pulvinar congue diam, nec vulputate lectus consequat ac</p>
+        <div class="columns">
+            <div class="columns__left-menu">
+                {% include "../blocks/_left-menu/_left-menu.html" %}
+            </div>
+            <div class="columns__content">
+                <h3 class="title_h3">My content</h3>
+                {% include "../blocks/my-content/my-content.html" %}
+            </div>
+        </div>
+    </div>
 
 {% endblock %}

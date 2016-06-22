@@ -1,0 +1,36 @@
+<!-- My content start -->
+<ul class="my-content">
+    {% for item in myContentData %}
+    <li class="my-content__item">
+        <div class="my-content__image-wrapper">
+            <img class="my-content__image" src="{{ item.image }}">
+        </div>
+        <div class="my-content__info">
+            <div class="my-content__title">{{ item.title }}</div>
+            <div class="my-content__author">By {{ item.author }}</div>
+            <div class="my-content__preview">{{ item.preview }}</div>
+            <div class="my-content__date">{{ item.date }}</div>
+
+            <div class="my-content__actions">
+                <div class="my-content__action">
+                    <div class="my-content__action-icon">
+                        {% include "../../static/icons/edit.svg" %}
+                    </div>
+                    <div class="my-content__action-label">
+                        Edit
+                    </div>
+                </div>
+                <div class="my-content__action">
+                    <div class="my-content__action-icon">
+                        {% include "../../static/icons/delete.svg" %}
+                    </div>
+                    <div class="my-content__action-label">
+                        Delete
+                    </div>
+                </div>
+            </div>
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+<!-- My content finish -->
