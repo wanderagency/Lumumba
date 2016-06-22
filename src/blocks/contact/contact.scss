@@ -1,0 +1,38 @@
+.contact {
+    display: flex;
+    margin: 0 $g_space*4;
+}
+
+.contact__form {
+    flex: 1 1 auto;
+    margin-right: $g_space*3;
+}
+
+.contact__info {
+    flex: 1 1 180px;
+}
+
+.contact__header {
+    margin-top: $g_space;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
+
+.contact__header:first-child {
+    margin-top: 0;
+}
+
+.contact__text {
+    margin-top: $g_space/4;
+    font-style: normal;
+}
+
+.contact__social {
+    margin-top: $g_space/4;
+}
+
+.contact__social-link {
+    margin-right: $g_space/2;
+    padding: $g/5;
+    font-size: $fs_heading;
+}
