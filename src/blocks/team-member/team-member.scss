@@ -1,0 +1,43 @@
+.team-member {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.team-member__item {
+    display: flex;
+    margin-top: $g_space;
+    overflow: hidden;
+}
+
+.team-member__image-wrapper {
+    margin-right: $g_space;
+}
+
+.team-member__name {
+    margin-top: $g_space/8;
+    font-size: $fs_subheading;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+
+}
+
+.team-member__position {
+    color: $c_orange_dark;
+}
+
+.team-member__description {
+    margin-top: $g_space*.5;
+}
+
+.team-member__social {
+    margin-top: $g_space;
+}
+
+.team-member__social-link {
+    margin-right: $g_space/4;
+    padding: $g/2;
+    font-size: $fs_heading;
+    color: $c_blue;
+}
