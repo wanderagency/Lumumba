@@ -1,0 +1,47 @@
+<!-- Blog start -->
+<div class="blog">
+    <div class="blog__wrapper">
+        <div class="blog__intro">
+            <div class="blog__heading">
+                Trending posts
+            </div>
+            <div class="blog__button-wrapper">
+                <div class="button button_orange">
+                    <div class="button__text">
+                        Post a Blog
+                    </div>
+                </div>
+            </div>
+        </div>
+        <ul class="blog__list">
+            {% for item in blogData %}
+            <li class="blog__item">
+                <div class="blog__image-wrapper">
+                    <img class="blog__image" src="{{ item.image }}">
+                </div>
+                <div class="blog__info">
+                    <div class="blog__title">{{ item.title }}</div>
+                    <div class="blog__author">By {{ item.author }}</div>
+                    <div class="blog__preview">{{ item.preview }}</div>
+                    <div class="blog__date">{{ item.date }}</div>
+
+                    <div class="blog__actions">
+                        <div class="button button_blue blog__button">
+                            <div class="button_text">
+                                Continue reading
+                            </div>
+                        </div>
+                        <div class="blog__action">
+                            {% include "../../static/icons/like.svg" %}
+                        </div>
+                        <div class="blog__action">
+                            {% include "../../static/icons/dislike.svg" %}
+                        </div>
+                    </div>
+                </div>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</div>
+<!-- Blog finish -->

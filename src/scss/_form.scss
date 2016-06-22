@@ -62,6 +62,16 @@
             color: $c_red;
         }
     }
+
+    &_orange {
+        background-color: $c_orange;
+        color: $c_white;
+
+        &:hover {
+            border: 1px solid $c_orange;
+            color: $c_orange;
+        }
+    }
 }
 
 // Select
