@@ -1,0 +1,55 @@
+.my-designs {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.my-designs__item {
+    display: flex;
+    margin-top: $g_space;
+    overflow: hidden;
+}
+
+.my-designs__image-wrapper {
+    margin-right: $g_space;
+}
+
+.my-designs__title {
+    margin-top: $g_space/8;
+    font-size: $fs_subheading;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    color: $c_black;
+}
+
+.my-designs__description {
+    margin-top: $g_space*.5;
+}
+
+.my-designs__date {
+    margin-top: $g_space/2;
+    color: $c_grey;
+}
+
+.my-designs__actions {
+    display: flex;
+    margin-top: $g_space;
+}
+
+.my-designs__action {
+    flex: 0 0 auto;
+    display: flex;
+    margin-right: $g_space/2;
+    padding: $g*.5;
+    color: $c_blue;
+    cursor: pointer;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.my-designs__action-icon {
+    margin-right: $g_space/8;
+}

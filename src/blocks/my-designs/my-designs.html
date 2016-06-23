@@ -1,0 +1,16 @@
+<!-- My designs start -->
+<ul class="my-designs">
+    {% for item in myDesignsData %}
+    <li class="my-designs__item">
+        <div class="my-designs__image-wrapper">
+            <img class="my-designs__image" src="{{ item.image }}">
+        </div>
+        <div class="my-designs__info">
+            <div class="my-designs__title">{{ item.title }}</div>
+            <div class="my-designs__description">{{ item.description }}</div>
+            <div class="my-designs__date">Submitted {{ item.date }}</div>
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+<!-- My designs finish -->
