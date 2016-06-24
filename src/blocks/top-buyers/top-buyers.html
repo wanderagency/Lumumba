@@ -1,0 +1,15 @@
+<!-- Top buyers start -->
+<ol class="top-buyers">
+    {% for item in topBuyersData %}
+    <li class="top-buyers__item">
+        <div class="top-buyers__photo-wrapper">
+            <img class="top-buyers__photo" src="{{ item.photo }}">
+        </div>
+        <div class="top-buyers__info">
+            <div class="top-buyers__name">{{ item.name }}</div>
+            <div class="top-buyers__location">{{ item.location }}</div>
+        </div>
+    </li>
+    {% endfor %}
+</ol>
+<!-- Top buyers finish -->

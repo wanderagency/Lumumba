@@ -1,0 +1,50 @@
+.top-buyers {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    height: 675px;
+    list-style-type: none;
+    counter-reset: li;
+}
+
+.top-buyers__item {
+    display: flex;
+    flex: 1 1 auto;
+    height: 135px;
+    align-items: center;
+    padding-top: $g*4;
+    padding-bottom: $g*4;
+}
+
+.top-buyers__item:before {
+    content: counter(li) '.'; 
+    counter-increment: li; 
+    display: inline-block;
+    margin-right: $g_space/2;
+}
+
+.top-buyers__item:nth-child(-n+5) {
+    margin-right: $g_space;
+    border-right: 1px solid $c_grey;
+}
+
+.top-buyers__photo-wrapper {
+    margin-right: $g_space/2;
+}
+
+.top-buyers__photo {
+    display: block;
+}
+
+.top-buyers__name {
+    letter-spacing: .05em;
+    color: $c_black;
+}
+
+.top-buyers__location {
+    letter-spacing: .05em;
+    color: $c_orange;
+}
