@@ -1,0 +1,20 @@
+<!-- Past winners start -->
+<ol class="past-winners">
+    {% for item in pastWinnersData %}
+    <li class="past-winners__item">
+        <div class="past-winners__project-wrapper">
+            <img class="past-winners__project" src="{{ item.project }}">
+        </div>
+        <div class="past-winners__photo-wrapper">
+            <img class="past-winners__photo" src="{{ item.photo }}">
+        </div>
+        <div class="past-winners__info">
+            <div class="past-winners__name">{{ item.name }}</div>
+            <div class="past-winners__location">{{ item.location }}</div>
+        </div>
+        <div class="past-winners__wins">{{ item.wins }} Competition Wins</div>
+        <div class="past-winners__earned">$ {{ item.earned }} total earned</div>
+    </li>
+    {% endfor %}
+</ol>
+<!-- Past winners finish -->

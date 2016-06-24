@@ -1,0 +1,61 @@
+.past-winners {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    counter-reset: li;
+}
+
+.past-winners__item {
+    display: flex;
+    align-items: center;
+    flex: 1 1 auto;
+    margin-top: $g_space;
+}
+
+.past-winners__item:before {
+    content: counter(li) '.';
+    counter-increment: li;
+    display: inline-block;
+    margin-right: $g_space;
+}
+
+.past-winners__project-wrapper {
+    margin-right: $g_space*1.5;
+}
+
+.past-winners__project {
+    display: block;
+}
+
+.past-winners__photo-wrapper {
+    margin-right: $g_space/2;
+}
+
+.past-winners__photo {
+    display: block;
+}
+
+.past-winners__info {
+    flex: 1 1 auto;
+}
+
+.past-winners__name {
+    letter-spacing: .05em;
+    color: $c_black;
+}
+
+.past-winners__location {
+    letter-spacing: .05em;
+    color: $c_orange;
+}
+
+.past-winners__wins {
+    flex: 1 1 auto;
+}
+
+.past-winners__earned {
+    flex: 1 1 auto;
+}
