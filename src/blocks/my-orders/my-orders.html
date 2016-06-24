@@ -1,0 +1,48 @@
+<!-- My orders start -->
+<ul class="my-orders">
+    {% for item in myOrdersData %}
+    <li class="my-orders__item">
+        <div class="my-orders__image-wrapper">
+            <img class="my-orders__image" src="{{ item.image }}">
+        </div>
+        <div class="my-orders__info">
+            <div class="my-orders__title">{{ item.title }}</div>
+            <div class="my-orders__status">This order is marked as <span class="my-orders__status-value">{{ item.status }}</span></div>
+            <div class="my-orders__data my-orders__data_details">
+                <div class="my-orders__data-title">Details</div>
+                <div class="my-orders__data-text">
+                    <p class="my-orders__data-item">
+                        Order Date: {{ item.order_date }}
+                    </p>
+                    <p class="my-orders__data-item">
+                        Order Total: {{ item.order_total }}
+                    </p>
+                </div>
+            </div>
+            <div class="my-orders__data my-orders__data_billing">
+                <div class="my-orders__data-title">Billing details</div>
+                <div class="my-orders__data-text">
+                    <p class="my-orders__data-item">
+                        {{ item.billing_name }}
+                    </p>
+                    <p class="my-orders__data-item">
+                        {{ item.billing_address }}
+                    </p>
+                </div>
+            </div>
+            <div class="my-orders__data my-orders__data_shipping">
+                <div class="my-orders__data-title">Shipping details</div>
+                <div class="my-orders__data-text">
+                    <p class="my-orders__data-item">
+                        {{ item.shipping_name }}
+                    </p>
+                    <p class="my-orders__data-item">
+                        {{ item.shipping_address }}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </li>
+    {% endfor %}
+</ul>
+<!-- My orders finish -->

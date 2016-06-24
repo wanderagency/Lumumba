@@ -1,0 +1,56 @@
+.my-orders {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.my-orders__item {
+    display: flex;
+    margin-top: $g_space;
+    overflow: hidden;
+}
+
+.my-orders__image-wrapper {
+    margin-right: $g_space;
+}
+
+.my-orders__title {
+    margin-top: $g_space/8;
+    font-size: $fs_larger;
+    font-weight: 600;
+    color: $c_black;
+}
+
+.my-orders__status {
+    margin-top: $g_space*.05;
+}
+
+.my-orders__status-value {
+    text-transform: uppercase;
+}
+
+.my-orders__data_billing,
+.my-orders__data_shipping {
+    float: left;
+    width: 50%;
+    padding-right: $g*2;
+}
+
+.my-orders__data-title {
+    margin-top: $g_space;
+    font-size: $fs_heading;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+    color: $c_black;
+}
+
+.my-orders__data-text {
+    margin-top: $g_space/2;
+}
+
+.my-orders__data-item {
+    margin-top: $g_space*.1;
+    margin-bottom: 0;
+}
