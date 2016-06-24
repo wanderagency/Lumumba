@@ -1,0 +1,20 @@
+<!-- Top designers start -->
+<ol class="top-designers">
+    {% for item in topDesignersData %}
+    <li class="top-designers__item">
+        <a class="top-designers__link" href="participant.html">
+            <div class="top-designers__project-wrapper">
+                <img class="top-designers__project" src="{{ item.project }}">
+            </div>
+            <div class="top-designers__photo-wrapper">
+                <img class="top-designers__photo" src="{{ item.photo }}">
+            </div>
+            <div class="top-designers__info">
+                <div class="top-designers__name">{{ item.name }}</div>
+                <div class="top-designers__location">{{ item.location }}</div>
+            </div>
+        </a>
+    </li>
+    {% endfor %}
+</ol>
+<!-- Top buyers finish -->
