@@ -112,7 +112,7 @@ hr {
 	max-width: $g_layout;
     min-width: $g_layout_min;
 	margin: 0 auto;
-	padding: 0;
+	padding: 0 $g*2;
 }
 
 .columns {

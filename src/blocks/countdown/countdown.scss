@@ -8,14 +8,15 @@
 .countdown__wrapper {
     @extend .wrapper;
 
-    height: $g*12;
+    min-height: $g*12;
+    padding-top: $g*3;
+    padding-bottom: $g*3;
     background: url('../static/images/countdown_bg.png') 75% 0 no-repeat;
     text-align: center;
     overflow: hidden;
 }
 
 .countdown__title {
-    margin-top: $g_space*.75;
     margin-bottom: -$g_space*.1;
     font-size: $fs_large;
     font-weight: 500;
