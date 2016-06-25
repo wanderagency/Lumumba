@@ -6,6 +6,10 @@
     margin-top: $g_space*1;
     width: $g*52;
     text-align: center;
+
+    @include res(fablet) {
+		width: 100%;
+	}
 }
 
 .account__avatar-photo {
@@ -27,6 +31,10 @@
 .account__form {
     margin-top: $g_space;
     width: $g*52;
+
+    @include res(fablet) {
+		width: 100%;
+	}
 }
 
 .account__connect {
