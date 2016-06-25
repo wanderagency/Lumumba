@@ -8,21 +8,28 @@
 .footer__wrapper {
 	@extend .wrapper;
 
-	height: 320px;
 	padding: $g*6 0 $g*4;
 }
 
 .footer__nav {
-	display: block;
-	margin: 0;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 $g_space*3;
 	padding: 0;
 	list-style-type: none;
 	text-align: center;
+
+	@include res(pad) {
+		margin: 0 $g_space;
+	}
+
+	@include res(smart) {
+		flex-direction: column;
+	}
 }
 
 .footer__nav-item {
-	display: inline-block;
-	margin: 0 $g_space*.75;
+	white-space: nowrap;
 }
 .footer__nav-link {
 	display: inline-block;
@@ -31,6 +38,10 @@
 	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: .3em;
+
+	&:hover {
+		text-decoration: underline;
+	}
 }
 
 .footer__social {

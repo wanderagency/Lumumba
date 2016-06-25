@@ -8,12 +8,13 @@ $path_fonts: $path + '/fonts/';
 // grid main
 $g: 10px;									// Main grid step
 $g_space: 40px;								// Grid side step
-$g_layout: 1200px;						    // Page width
+$g_layout: 1200px;                          // Page width
+$g_layout_min: 320px;						// Page width minimum
 $g_icon: 20px;								// Icon size
 
 
 // media
-$m_full: 1260px;							// Media for Full screen monitor
+$m_full: 1200px;							// Media for Full screen monitor
 $m_pad: 999px;								// Media for Tablet PC
 $m_fablet: 762px;							// Media for Fablets
 $m_smart: 600px;							// Media for Smartphones

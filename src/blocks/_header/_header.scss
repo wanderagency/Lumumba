@@ -5,8 +5,14 @@
 }
 
 .header__stripe {
-	height: 45px;
+	display: flex;
+	justify-content: space-between;
 	background-color: $c_blue;
+
+	@include res(smart) {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
 }
 
 .header__social {
@@ -19,7 +25,6 @@
 	padding: 0 $g;
 }
 .header__personal {
-	float: right;
 	padding: 0 $g*1.5;
 }
 .header__personal-link {

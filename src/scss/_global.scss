@@ -109,7 +109,8 @@ hr {
 
 .wrapper {
 	position: relative;
-	width: $g_layout;
+	max-width: $g_layout;
+    min-width: $g_layout_min;
 	margin: 0 auto;
 	padding: 0;
 }
