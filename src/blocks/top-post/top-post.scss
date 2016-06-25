@@ -9,17 +9,35 @@
     @extend .wrapper;
 
     display: flex;
-    height: 460px;
+    padding-bottom: $g*4;
     overflow: hidden;
+
+    @include res(smart) {
+        flex-direction: column;
+	}
 }
 
 .top-post__image-wrapper {
+    flex: 1 1 33%;
     margin-top: $g_space;
     margin-right: $g_space*2;
+
+    @include res(pad) {
+        margin-right: $g_space;
+	}
+
+	@include res(smart) {
+        margin-right: 0;
+	}
 }
 
 .top-post__image {
     display: block;
+    width: 100%;
+}
+
+.top-post__info {
+    flex: 1 1 67%;
 }
 
 .top-post__heading {
@@ -27,6 +45,10 @@
     font-family: $ff_title;
     font-size: $fs_huge;
     color: $c_white;
+
+    @include res(phone) {
+        font-size: $fs_huge*.8;
+	}
 }
 
 .top-post__title {
