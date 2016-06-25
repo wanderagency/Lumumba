@@ -1,15 +1,33 @@
 .contact {
     display: flex;
-    margin: 0 $g_space*4;
+    width: 75%;
+    margin: auto;
+
+    @include res(pad) {
+		width: 100%;
+	}
+
+	@include res(smart) {
+		flex-direction: column;
+	}
 }
 
 .contact__form {
-    flex: 1 1 auto;
+    flex: 1 1 70%;
     margin-right: $g_space*3;
+    margin-bottom: $g_space;
+
+    @include res(pad) {
+		margin-right: $g_space;
+	}
+
+	@include res(smart) {
+		margin-right: 0;
+	}
 }
 
 .contact__info {
-    flex: 1 1 180px;
+    flex: 1 1 30%;
 }
 
 .contact__header {
