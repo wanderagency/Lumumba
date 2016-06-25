@@ -10,6 +10,10 @@
     display: flex;
     flex-wrap: nowrap;
     align-items: center;
+
+    @include res(smart) {
+        flex-direction: column;
+	}
 }
 
 .blog__heading {
@@ -17,6 +21,10 @@
     font-family: $ff_title;
     font-size: $fs_title;
     color: $c_black;
+
+    @include res(smart) {
+        margin-bottom: $g_space;
+	}
 }
 
 .blog__button {
@@ -33,10 +41,30 @@
     display: flex;
     margin-top: $g_space;
     overflow: hidden;
+
+    @include res(smart) {
+        flex-direction: column;
+        margin-bottom: $g_space*2;
+	}
 }
 
 .blog__image-wrapper {
+    flex: 1 1 33%;
     margin-right: $g_space;
+
+    @include res(smart) {
+        margin-right: 0;
+        margin-bottom: $g_space;
+	}
+}
+
+.blog__image {
+    display: block;
+    width: 100%;
+}
+
+.blog__info {
+    flex: 1 1 67%;
 }
 
 .blog__title {

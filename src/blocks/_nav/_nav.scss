@@ -80,6 +80,8 @@
 }
 
 .nav__link-icon {
+	height: $g*5;
+	
 	@include res(phone) {
 		flex: 0 0 $g*7;
 		height: $g*3;
