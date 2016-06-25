@@ -122,10 +122,21 @@ hr {
 
 .columns {
 	display: flex;
+
+	@include res(fablet) {
+		flex-direction: column;
+	}
 }
 
 .columns__left-menu {
-	flex: 0 0 0;
+	flex: 0 0 280px;
+	margin-right: $g_space*2;
+
+	@include res(pad) {
+		flex: 0 0 200px;
+		margin-right: 0;
+		margin-bottom: $g_space;
+	}
 }
 
 .columns__content {
@@ -134,7 +145,7 @@ hr {
 
 .page-description {
     margin: 0 auto $g_space*2.5;
-    width: $g_layout/1.5;
+    width: 75%;
     text-align: center;
 }
 

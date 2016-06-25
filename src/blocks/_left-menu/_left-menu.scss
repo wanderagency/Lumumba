@@ -1,7 +1,6 @@
 .left-menu {
-    margin: 0 $g_space*2 0 0;
+    margin: 0;
     padding: 0;
-    width: $g*28;
     list-style-type: none;
 }
 
@@ -11,6 +10,7 @@
 
 .left-menu__link {
     display: flex;
+    align-items: center;
     padding: $g*2.5 0;
     font-size: $fs_heading;
     font-weight: 600;
@@ -22,6 +22,10 @@
     &:hover {
         color: $c_blue;
     }
+
+    @include res(fablet) {
+		padding: $g 0;
+	}
 }
 
 .left-menu__item:last-child .left-menu__link {
@@ -33,9 +37,13 @@
 }
 
 .left-menu__link-text {
-    flex: 1 0 auto;
+    flex: 1 1 auto;
 }
 
 .left-menu__link-arrow {
     padding: $g/10 $g/2 0 0;
+
+    @include res(fablet) {
+		display: none;
+	}
 }
