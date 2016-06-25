@@ -8,6 +8,10 @@
     height: 675px;
     list-style-type: none;
     counter-reset: li;
+
+    @include res(smart) {
+        height: auto;
+	}
 }
 
 .top-buyers__item {
@@ -27,8 +31,13 @@
 }
 
 .top-buyers__item:nth-child(-n+5) {
+    padding-right: $g*4;
     margin-right: $g_space;
     border-right: 1px solid $c_grey;
+
+    @include res(smart) {
+        border-right: 0;
+	}
 }
 
 .top-buyers__photo-wrapper {
