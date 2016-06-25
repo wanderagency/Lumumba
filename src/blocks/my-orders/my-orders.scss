@@ -17,12 +17,23 @@
 }
 
 .my-orders__image-wrapper {
+    flex: 1 1 33%;
     margin-right: $g_space;
     text-align: center;
 
     @include res(smart) {
+        margin-right: 0;
 		margin-bottom: $g_space;
 	}
+}
+
+.my-orders__image {
+    display: block;
+    width: 100%;
+}
+
+.my-orders__info {
+    flex: 1 1 67%;
 }
 
 .my-orders__title {

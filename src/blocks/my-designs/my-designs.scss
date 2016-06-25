@@ -9,10 +9,30 @@
     display: flex;
     margin-top: $g_space;
     overflow: hidden;
+
+    @include res(smart) {
+		flex-direction: column;
+		padding-bottom: $g_space;
+	}
 }
 
 .my-designs__image-wrapper {
+    flex: 1 1 33%;
     margin-right: $g_space;
+
+    @include res(smart) {
+		margin-right: 0;
+		margin-bottom: $g_space;
+	}
+}
+
+.my-designs__image {
+    display: block;
+    width: 100%;
+}
+
+.my-designs__info {
+    flex: 1 1 67%;
 }
 
 .my-designs__title {
