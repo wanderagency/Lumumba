@@ -125,6 +125,13 @@
     background-color: $c_radio_blue;
 }
 
+.product__quantity {
+    display: inline-block;
+    margin-top: $g_space/4;
+    margin-right: $g_space/2;
+    width: $g*15;
+}
+
 .product__desc-title {
     margin-top: $g_space*1.25;
     margin-bottom: $g_space*.75;

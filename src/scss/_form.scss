@@ -83,6 +83,7 @@
     margin-right: $g*2;
     border: 1px solid $c_grey;
     border-radius: 0;
+    width: 100%;
     min-width: $g*15;
     height: $g*4.3;
     font-size: $fs_button;
@@ -96,7 +97,7 @@
 }
 
 .select.select-type-form .select-content {
-    border: 1px solid $c_grey;
+    border: 1px solid $c_blue;
     border-radius: 0;
     box-shadow: $bs;
 }
@@ -116,17 +117,29 @@
 // Form group
 .form__group {
     margin-top: $g_space;
+    margin-bottom: 0;
 }
 
 .form__group:first-child {
     margin-top: 0;
 }
 
+.form__group_half {
+    display: inline-block;
+    width: calc(50% - 10px);
+    margin-right: $g_space/2;
+}
+
+.form__group_half + .form__group_half {
+    margin-right: 0;
+}
+
 // Form input
 .form__input {
     width: 100%;
     border: 1px solid $c_grey;
-    padding: $g*1.2 $g*2;
+    padding: $g*1.1 $g*2;
+    vertical-align: middle;
     resize: none;
 }
 
