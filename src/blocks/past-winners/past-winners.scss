@@ -13,6 +13,12 @@
     align-items: center;
     flex: 1 1 auto;
     margin-top: $g_space;
+
+    @include res(phone) {
+        flex-direction: column;
+        padding-bottom: $g_space;
+        border-bottom: 1px solid $c_grey;
+	}
 }
 
 .past-winners__item:before {
@@ -20,10 +26,26 @@
     counter-increment: li;
     display: inline-block;
     margin-right: $g_space;
+
+    @include res(phone) {
+        content: counter(li);
+        font-size: $fs_large;
+        margin-right: 0;
+		margin-bottom: $g_space/2;
+	}
 }
 
 .past-winners__project-wrapper {
     margin-right: $g_space*1.5;
+
+    @include res(pad) {
+        margin-right: $g_space/2;
+	}
+
+    @include res(phone) {
+        margin-right: 0;
+		margin-bottom: $g_space/2;
+	}
 }
 
 .past-winners__project {
@@ -31,7 +53,11 @@
 }
 
 .past-winners__photo-wrapper {
-    margin-right: $g_space/2;
+    padding: 0 $g;
+    
+    @include res(phone) {
+		margin-bottom: $g_space/2;
+	}
 }
 
 .past-winners__photo {
@@ -43,19 +69,31 @@
 }
 
 .past-winners__name {
+    padding: 0 $g;
     letter-spacing: .05em;
     color: $c_black;
 }
 
 .past-winners__location {
+    padding: 0 $g;
     letter-spacing: .05em;
     color: $c_orange;
+
+    @include res(phone) {
+		margin-bottom: $g_space/2;
+	}
 }
 
 .past-winners__wins {
     flex: 1 1 auto;
+    padding: 0 $g;
+
+    @include res(phone) {
+		margin-bottom: $g_space/2;
+	}
 }
 
 .past-winners__earned {
     flex: 1 1 auto;
+    padding: 0 $g;
 }
