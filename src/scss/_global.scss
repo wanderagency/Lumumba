@@ -67,6 +67,11 @@ h2,
     text-transform: uppercase;
     letter-spacing: 1em;
     color: $c_black;
+
+    @include res(smart) {
+		font-size: $fs_large*.8;
+		letter-spacing: .8em;
+	}
 }
 
 h3,
