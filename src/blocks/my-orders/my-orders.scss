@@ -9,10 +9,20 @@
     display: flex;
     margin-top: $g_space;
     overflow: hidden;
+
+    @include res(smart) {
+		flex-direction: column;
+		padding-bottom: $g_space;
+	}
 }
 
 .my-orders__image-wrapper {
     margin-right: $g_space;
+    text-align: center;
+
+    @include res(smart) {
+		margin-bottom: $g_space;
+	}
 }
 
 .my-orders__title {
@@ -35,6 +45,10 @@
     float: left;
     width: 50%;
     padding-right: $g*2;
+
+    @include res(pad) {
+		width: 100%;
+	}
 }
 
 .my-orders__data-title {
