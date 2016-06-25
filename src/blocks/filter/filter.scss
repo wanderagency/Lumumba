@@ -8,10 +8,18 @@
 
     display: flex;
     align-items: baseline;
+
+    @include res(smart) {
+		flex-direction: column;
+	}
 }
 
 .filter__droprown {
     margin-right: $g_space;
+
+    @include res(smart) {
+		padding: $g*2 0;
+	}
 }
 
 .filter__droprown-title {
@@ -76,6 +84,10 @@
     font-size: $fs_caption;
     font-weight: 600;
     text-align: right;
+
+    @include res(smart) {
+		padding: $g*2 0;
+	}
 }
 
 .filter__summary-highlight {
