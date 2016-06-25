@@ -9,11 +9,32 @@
     display: flex;
     margin-top: $g_space;
     overflow: hidden;
+
+    @include res(smart) {
+		flex-direction: column;
+		padding-bottom: $g_space;
+	}
 }
 
 .team-member__image-wrapper {
+    flex: 1 1 33%;
     margin-right: $g_space;
+
+    @include res(smart) {
+		margin-right: 0;
+		margin-bottom: $g_space;
+	}
 }
+
+.team-member__image {
+    display: block;
+    width: 100%;
+}
+
+.team-member__info {
+    flex: 1 1 67%;
+}
+
 
 .team-member__name {
     margin-top: $g_space/8;
