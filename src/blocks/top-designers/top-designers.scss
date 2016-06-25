@@ -11,11 +11,20 @@
 .top-designers__item {
     flex: 1 1 auto;
     margin-top: $g_space;
+
+    @include res(phone) {
+        padding-bottom: $g_space;
+        border-bottom: 1px solid $c_grey;
+	}
 }
 
 .top-designers__link {
     display: flex;
     align-items: center;
+
+    @include res(phone) {
+		flex-direction: column;
+	}
 }
 
 .top-designers__link:before {
@@ -23,10 +32,22 @@
     counter-increment: li;
     display: inline-block;
     margin-right: $g_space;
+
+    @include res(phone) {
+        content: counter(li);
+        font-size: $fs_large;
+        margin-right: 0;
+		margin-bottom: $g_space/2;
+	}
 }
 
 .top-designers__project-wrapper {
     margin-right: $g_space*1.5;
+
+    @include res(phone) {
+        margin-right: 0;
+		margin-bottom: $g_space/2;
+	}
 }
 
 .top-designers__project {
@@ -35,6 +56,11 @@
 
 .top-designers__photo-wrapper {
     margin-right: $g_space/2;
+
+    @include res(phone) {
+        margin-right: 0;
+		margin-bottom: $g_space/2;
+	}
 }
 
 .top-designers__photo {

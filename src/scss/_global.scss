@@ -134,6 +134,10 @@ hr {
 
 	@include res(pad) {
 		flex: 0 0 200px;
+	}
+
+	@include res(fablet) {
+		flex: 0 0 auto;
 		margin-right: 0;
 		margin-bottom: $g_space;
 	}
@@ -147,6 +151,10 @@ hr {
     margin: 0 auto $g_space*2.5;
     width: 75%;
     text-align: center;
+
+    @include res(fablet) {
+		margin-bottom: $g_space;
+	}
 }
 
 .hidden {
