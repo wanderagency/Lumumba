@@ -8,9 +8,14 @@
 .winner__wrapper {
     @extend .wrapper;
 
+    display: flex;
     height: 320px;
     padding: 0 $g_space;
     overflow: hidden;
+}
+
+.winner__info {
+    flex: 1 1 auto;
 }
 
 .winner__title {
@@ -19,6 +24,12 @@
     font-family: $ff_title;
     font-size: $fs_huge;
     color: $c_white;
+
+    @include res(pad) {
+        margin-bottom: $g_space/2;
+		font-size: $fs_title;
+		line-height: $fs_title*.8;
+	}
 }
 
 .winner__link {
@@ -26,12 +37,19 @@
     text-transform: uppercase;
     letter-spacing: 1.35em;
     color: $c_white;
+
+    @include res(pad) {
+        letter-spacing: .15em;
+	}
+}
+
+.winner__image-wrapper {
+    flex: 1 1 auto;
 }
 
 .winner__image {
-    position: absolute;
-    right: $g_space;
-    top: 0;
+    display: block;
+    height: 100%;
 }
 
 .winner__button-wrapper {
