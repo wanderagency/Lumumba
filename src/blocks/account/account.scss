@@ -67,9 +67,17 @@
     margin-right: $g_space/4;
     font-size: $fs_heading;
     vertical-align: middle;
+
+    @include res(fablet) {
+		margin-right: 0;
+	}
 }
 
 .account__connect-text {
     display: inline-block;
     vertical-align: middle;
+
+    @include res(fablet) {
+		display: none;
+	}
 }
