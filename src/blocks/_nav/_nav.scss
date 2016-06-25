@@ -1,11 +1,9 @@
 .nav {
 	position: relative;
-	height: 135px;
-	text-align: center;
+	min-height: 135px;
 }
 
 .nav__wrapper {
-	padding-top: $g*3;
 	@extend .wrapper;
 }
 
@@ -21,20 +19,43 @@
 }
 
 .nav__list {
-	display: block;
-	margin: 0;
+	display: flex;
+	justify-content: space-between;
+	margin: 0 $g_space*3;
 	padding: 0;
 	list-style: none;
+
+	@include res(pad) {
+		margin: 0 $g_space/2;
+	}
+
+	@include res(fablet) {
+		padding-top: $g*11;
+	}
+
+	@include res(phone) {
+		flex-direction: column;
+		padding-bottom: $g;
+	}
 }
 
 .nav__item {
-	display: inline-block;
-	width: $g*9;
-	margin: 0 $g;
+	flex: 1 1 $g*9;
+	padding: $g*3 0;
+	text-align: center;
+
+	@include res(phone) {
+		flex: 1 1 auto;
+		padding: $g 0;
+	}
 }
 
 .nav__item:nth-child(3) {
-	margin-right: $g*38;
+	margin-right: 33%;
+
+	@include res(fablet) {
+		margin: 0;
+	}
 }
 
 .nav__link {
@@ -50,5 +71,28 @@
 	}
 	&_selected {
 		color: $c_blue;
+	}
+
+	@include res(phone) {
+		display: flex;
+		align-items: center;
+	}
+}
+
+.nav__link-icon {
+	@include res(phone) {
+		flex: 0 0 $g*7;
+		height: $g*3;
+	}
+}
+
+.nav__link-icon > svg {
+	max-height: 100%;
+}
+
+.nav__link-text {
+	@include res(phone) {
+		flex: 1 1 auto;
+		text-align: left;
 	}
 }
