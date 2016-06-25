@@ -138,6 +138,20 @@
     color: $c_blue;
 }
 
+.form__label {
+    display: inline-block;
+    margin-bottom: $g_space/2;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: .05em;
+    color: $c_black;
+}
+
+.form__label_required:after {
+    content: '*';
+    color: $c_red;
+}
+
 
 // .button {
 //     display: inline-block;

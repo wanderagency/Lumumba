@@ -1,0 +1,67 @@
+.account {
+    position: relative;
+}
+
+.account__avatar {
+    margin-top: $g_space*1;
+    width: $g*52;
+    text-align: center;
+}
+
+.account__avatar-photo {
+    display: block;
+    margin: auto;
+    border-radius: 50%;
+}
+
+.account__avatar-edit {
+    margin-top: $g_space/2;
+    color: $c_blue;
+    cursor: pointer;
+    
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.account__form {
+    margin-top: $g_space;
+    width: $g*52;
+}
+
+.account__connect {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: $g_space*2;
+}
+
+.account__connect-button {
+    flex: 0 1 calc(33.33% - 7px);
+    margin-right: $g_space/4;
+    margin-bottom: $g_space/4;
+    padding: $g*2;
+    border: 1px solid $c_grey;
+    text-align: center;
+    cursor: pointer;
+
+    &:hover {
+        border-color: $c_blue;
+        color: $c_blue;
+    }
+}
+
+.account__connect-button:nth-child(3n) {
+    margin-right: 0;
+}
+
+.account__connect-icon {
+    display: inline-block;
+    margin-right: $g_space/4;
+    font-size: $fs_heading;
+    vertical-align: middle;
+}
+
+.account__connect-text {
+    display: inline-block;
+    vertical-align: middle;
+}
