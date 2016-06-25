@@ -9,41 +9,73 @@
 
 .checkers__tiles {
     display: flex;
+    flex-wrap: wrap;
     margin: 0;
     padding: 0;
     list-style-type: none;
-    flex-wrap: wrap;
+
+    @include res(pad) {
+		flex-direction: column;
+	}
 }
 
 .checkers__tile {
+    flex: 0 0 50%;
     display: flex;
     align-items: flex-start;
-    margin-bottom: $g_space;
-    width: 50%;
+
+
+    &:nth-child(3n),
+    &:nth-child(4n) {
+        flex-direction: row-reverse;
+    }
+
+    @include res(pad) {
+        &:nth-child(n){
+            flex-direction: row;
+        }
+		&:nth-child(2n){
+            flex-direction: row-reverse;
+        }
+	}
+
+	@include res(smart) {
+	    &:nth-child(n){
+            flex: 1 1 auto;
+            flex-direction: column;
+	    }
+	}
 }
 
-.checkers__tile:nth-child(3n),
-.checkers__tile:nth-child(4n) {
-    flex-direction: row-reverse;
+.checkers__image-wrapper {
+    flex: 1 1 50%;
+    margin-bottom: $g_space;
+
+	@include res(smart) {
+        flex: 1 1 auto;
+        width: 100%;
+	}
 }
 
 .checkers__image {
-
+    display: block;
+    width: 100%;
 }
 
 .checkers__desc {
+    flex: 1 1 50%;
     padding: 0 $g*4;
-}
+    margin-bottom: $g_space;
 
-.checkers__tile:nth-child(4n+2) .checkers__desc {
-    padding-right: $g*2;
-}
-.checkers__tile:nth-child(4n+3) .checkers__desc {
-    padding-left: $g*2;
+    @include res(smart) {
+        flex: 1 1 auto;
+        width: 100%;
+	}
 }
 
 .checkers__title {
-    width: 100%;
+    display: block;
+    max-width: 100%;
     font-family: $ff_title;
     font-size: $fs_title;
     white-space: nowrap;

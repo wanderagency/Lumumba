@@ -10,7 +10,8 @@
     @extend .wrapper;
 
     min-height: $g*33;
-    padding: $g*7 0;
+    padding-top: $g*7;
+    padding-bottom: $g*7;
     text-align: center;
 }
 
