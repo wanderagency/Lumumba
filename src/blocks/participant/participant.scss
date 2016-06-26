@@ -7,13 +7,29 @@
     @extend .wrapper;
 
     display: flex;
+
+    @include res(fablet) {
+		flex-direction: column;
+	}
 }
 
 .participant__photo-wrapper {
+    flex: 1 1 50%;
+    justify-content: center;
     margin-right: $g_space*2;
+
+    @include res(fablet) {
+		margin-right: 0;
+		margin-bottom: $g_space;
+	}
 }
 .participant__photo {
     display: block;
+    width: 100%;
+}
+
+.participant__info {
+    flex: 1 1 50%;
 }
 
 .participant__desc-title {

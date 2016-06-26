@@ -97,7 +97,7 @@ hr {
 	margin: $g_space auto;
     border: 0;
 	border-top: 1px solid $c_grey;
-	width: $g_layout;
+	max-width: $g_layout;
 }
 
 .clearfix {
