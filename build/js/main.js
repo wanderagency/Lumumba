@@ -29,18 +29,21 @@ onDOMready(function(){
     // Init dropdown
     var DROPDOWN_TARGET_CLASSNAME = 'contestants__item';
     var DROPDOWN_CONTENT_CLASSNAME = 'drop__root';
+    var dropdownContent = document.querySelector('.' + DROPDOWN_CONTENT_CLASSNAME);
 
-    document.querySelectorAll('.' + DROPDOWN_TARGET_CLASSNAME).forEach(function(el) {
-        var drop = new Drop({
-            target: el,
-            content: document.querySelector('.' + DROPDOWN_CONTENT_CLASSNAME).cloneNode(true),
-            position: 'bottom center',
-            openOn: 'hover',
-            hoverOpenDelay: 150,
-            hoverCloseDelay: 100,
-            classes: 'drop-theme-arrows'
+    if (dropdownContent) {
+        document.querySelectorAll('.' + DROPDOWN_TARGET_CLASSNAME).forEach(function(el) {
+            var drop = new Drop({
+                target: el,
+                content: dropdownContent.cloneNode(true),
+                position: 'bottom center',
+                openOn: 'hover',
+                hoverOpenDelay: 150,
+                hoverCloseDelay: 100,
+                classes: 'drop-theme-arrows'
+            });
         });
-    });
+    }
 
 });
 
