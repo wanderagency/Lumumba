@@ -1,0 +1,108 @@
+.drop-element.drop-theme-arrows .drop-content {
+    background-color: #fff;
+}
+.drop-element.drop-theme-arrows.drop-element-attached-bottom.drop-element-attached-center .drop-content:before {
+    border-top-color: #fff;
+}
+.drop-element.drop-theme-arrows.drop-element-attached-top.drop-element-attached-center .drop-content:before {
+    border-bottom-color: #fff;
+}
+.layout__content .drop__root {
+    display: none;
+}
+
+.drop__root {
+    position: relative;
+    display: flex;
+    width: 50vw;
+    padding: $g*2;
+    max-width: $g_layout/2;
+    background-color: $c_white;
+}
+
+.drop__image-wrapper {
+    flex: 1 1 50%;
+    margin-right: $g_space;
+}
+
+.drop__image {
+    display: block;
+    width: 100%;
+}
+
+.drop__info {
+    flex: 1 1 50%;
+}
+
+.drop__title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.drop__title-text {
+    text-transform: uppercase;
+}
+
+.drop__title-actions {
+    display: flex;
+}
+
+.drop__action {
+    margin-left: $g_space/4;
+    cursor: pointer;
+
+    &:hover {
+        color: $c_blue;
+    }
+}
+
+.drop__desc {
+    margin-top: $g_space*.25;
+}
+
+.drop__designer {
+    display: flex;
+    align-items: center;
+}
+
+.drop__avatar-wrapper {
+    flex: 0 0 auto;
+    margin-right: $g_space/2;
+}
+
+.drop__avatar {
+    display: block;
+    width: 100%;
+}
+
+.drop__designer-info {
+    flex: 1 1 auto;
+}
+
+.drop__designer-name {
+    letter-spacing: .05em;
+    color: $c_black;
+}
+
+.drop__designer-location {
+    letter-spacing: .05em;
+    color: $c_orange;
+}
+
+.drop__designer-desc {
+    margin-top: $g_space/2;
+    color: $c_grey;
+}
+
+.drop__social {
+    margin-top: $g_space/2;
+}
+
+.drop__social-link {
+    padding: $g/2;
+    font-size: $fs_heading;
+
+    &:hover {
+        color: $c_blue;
+    }
+}
